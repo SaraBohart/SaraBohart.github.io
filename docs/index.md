@@ -1,15 +1,18 @@
 ---
-title: Home
+title: Hello
 tags:
 - tag1
 - tag2
 ---
 
+## Hello! I'm Sara :D
 
-## STEMteresting
-### Team 301
-### Ella Greetis, Sara Bohart, Julia Smith, Xander Heafey
-1/16/25
-Spring 2025
-Arizona State University
-Prof. Nichols
+### Why don't you find elephants hiding intrees?
+
+
+
+
+
+
+
+* because they're really good at it!
