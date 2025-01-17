@@ -1,11 +1,15 @@
 ---
-title: Mission Statement
+title: Home
 tags:
 - tag1
 - tag2
 ---
 
 
-## Our Mission
-### Sharing STEM education to inspire curiosity in people of all ages.
-
+## STEMteresting
+### Team 301
+### Ella Greetis, Sara Bohart, Julia Smith, Xander Heafey
+1/16/25
+Spring 2025
+Arizona State University
+Prof. Nichols
