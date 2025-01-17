@@ -1,18 +1,9 @@
 ---
-title: Hello
+title: Charter
 tags:
 - tag1
 - tag2
 ---
 
-## Hello! I'm Sara :D
-
-### Why don't you find elephants hiding intrees?
-
-
-
-
-
-
-
-* because they're really good at it!
+## Who we are
+### STEMTeresting was created to keep STEM learning interesting for all ages through interactive exhibits that engage audiences of all ages, inspiring wonder and curiosity for the world around them.
