@@ -5,14 +5,10 @@ tags:
 - tag2
 ---
 
-## Hello! I'm Sara :D
+## Sara Bohart
+I am a third year robotics engineering student at Arizona State University.
 
-### Why don't you find elephants hiding intrees?
-
-
-
-
-
-
-
-* because they're really good at it!
+### STEMteresting (Team 301)
+This is a link to my team's GitHub. 
+[https://egr314-2025-s-301.github.io/main-page/](STEMteresting GitHub)
+Our project is a gravity simulating centrifuge, and I am responsible for controling the speed of the centrifuge.
