@@ -16,6 +16,7 @@ Components|Pros|Cons
 
 ### Selection
 The best choice for this project is the 942-PAN14EE12MD-ND because it is the cheapest of the three and should be strong enough to power the centrifuge. While this motor will require 12V, the system can utilize a switching regulator that brings the voltage down to 3.3V for the other components.
+
 ## Switching Power Supply
 ### Requierments
 The switching voltage regulator must output 3.3 V from a 12 V source. 
