@@ -529,11 +529,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#motor-driver" class="md-nav__link">
-    Motor Driver
+  <a href="#switching-power-supply" class="md-nav__link">
+    Switching Power Supply
   </a>
   
-    <nav class="md-nav" aria-label="Motor Driver">
+    <nav class="md-nav" aria-label="Switching Power Supply">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -563,11 +563,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#micro-controler" class="md-nav__link">
-    Micro Controler
+  <a href="#motor-driver" class="md-nav__link">
+    Motor Driver
   </a>
   
-    <nav class="md-nav" aria-label="Micro Controler">
+    <nav class="md-nav" aria-label="Motor Driver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -586,6 +586,40 @@
         
           <li class="md-nav__item">
   <a href="#selection_2" class="md-nav__link">
+    Selection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#micro-controler" class="md-nav__link">
+    Micro Controler
+  </a>
+  
+    <nav class="md-nav" aria-label="Micro Controler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requierments_2" class="md-nav__link">
+    Requierments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_3" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selection_3" class="md-nav__link">
     Selection
   </a>
   
@@ -732,11 +766,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#motor-driver" class="md-nav__link">
-    Motor Driver
+  <a href="#switching-power-supply" class="md-nav__link">
+    Switching Power Supply
   </a>
   
-    <nav class="md-nav" aria-label="Motor Driver">
+    <nav class="md-nav" aria-label="Switching Power Supply">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -766,11 +800,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#micro-controler" class="md-nav__link">
-    Micro Controler
+  <a href="#motor-driver" class="md-nav__link">
+    Motor Driver
   </a>
   
-    <nav class="md-nav" aria-label="Micro Controler">
+    <nav class="md-nav" aria-label="Motor Driver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -789,6 +823,40 @@
         
           <li class="md-nav__item">
   <a href="#selection_2" class="md-nav__link">
+    Selection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#micro-controler" class="md-nav__link">
+    Micro Controler
+  </a>
+  
+    <nav class="md-nav" aria-label="Micro Controler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requierments_2" class="md-nav__link">
+    Requierments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options_3" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selection_3" class="md-nav__link">
     Selection
   </a>
   
@@ -859,52 +927,13 @@
 <td>Torque - THe data sheet indicates that this motor can work with 4.9 mNm, which should be enough for our centrifuge. <br> Cost - This motor is very cost effective as it only costs $5.22.</td>
 <td>Gear Train Needed - This motor is rated for 12850 RPM, so a gear reduction will be needed. These gears would need to be sourced or 3D printed because the motor does not come with them. <br> Voltage - This motor also takes 12V, which will require a second power source.</td>
 </tr>
-<tr>
-<td>### Selection</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>The best choice for this project is the 942-PAN14EE12MD-ND because it is the cheapest of the three and should be strong enough to power the centrifuge. While this motor will require 12V, the system can utilize a switching regulator that brings the voltage down to 3.3V for the other components.</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>## Switching Power Supply</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>### Requierments</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>The switching voltage regulator must output 3.3 V from a 12 V source.</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>### Options</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Components</td>
-<td>Pros</td>
-<td>Cons</td>
-</tr>
-<tr>
-<td>----------</td>
-<td>----</td>
-<td>----</td>
-</tr>
 </tbody>
 </table>
 <h3 id="selection">Selection</h3>
-<h2 id="motor-driver">Motor Driver</h2>
+<p>The best choice for this project is the 942-PAN14EE12MD-ND because it is the cheapest of the three and should be strong enough to power the centrifuge. While this motor will require 12V, the system can utilize a switching regulator that brings the voltage down to 3.3V for the other components.</p>
+<h2 id="switching-power-supply">Switching Power Supply</h2>
 <h3 id="requierments">Requierments</h3>
-<p>The motor driver must use eirthe SPI or I2C communication per the project requierments.</p>
+<p>The switching voltage regulator must output 3.3 V from a 12 V source. </p>
 <h3 id="options_1">Options</h3>
 <table>
 <thead>
@@ -923,9 +952,9 @@
 </tbody>
 </table>
 <h3 id="selection_1">Selection</h3>
-<h2 id="micro-controler">Micro Controler</h2>
+<h2 id="motor-driver">Motor Driver</h2>
 <h3 id="requierments_1">Requierments</h3>
-<p>The micro controller must be compatable with the motor driver, use 3.3 volts, and have easily implementable code examples like the ones given in class.</p>
+<p>The motor driver must use eirthe SPI or I2C communication per the project requierments.</p>
 <h3 id="options_2">Options</h3>
 <table>
 <thead>
@@ -944,6 +973,27 @@
 </tbody>
 </table>
 <h3 id="selection_2">Selection</h3>
+<h2 id="micro-controler">Micro Controler</h2>
+<h3 id="requierments_2">Requierments</h3>
+<p>The micro controller must be compatable with the motor driver, use 3.3 volts, and have easily implementable code examples like the ones given in class.</p>
+<h3 id="options_3">Options</h3>
+<table>
+<thead>
+<tr>
+<th>Components</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="selection_3">Selection</h3>
 <h2 id="power-budget">Power Budget</h2>
 <p>Coming Soon!</p>
 
