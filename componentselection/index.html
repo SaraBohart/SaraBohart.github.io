@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#main-components" class="md-skip">
+        <a href="#motor" class="md-skip">
           Skip to content
         </a>
       
@@ -459,6 +459,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -487,6 +489,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -495,49 +499,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#main-components" class="md-nav__link">
-    Main Components
+  <a href="#requirements" class="md-nav__link">
+    Requirements
   </a>
-  
-    <nav class="md-nav" aria-label="Main Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#micro-controler" class="md-nav__link">
-    Micro Controler
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#motor-driver" class="md-nav__link">
-    Motor Driver
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#motor" class="md-nav__link">
-    Motor
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#battery" class="md-nav__link">
-    Battery
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#power-budget" class="md-nav__link">
-    Power Budget
+  <a href="#options" class="md-nav__link">
+    Options
   </a>
   
 </li>
@@ -629,6 +599,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -637,49 +609,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#main-components" class="md-nav__link">
-    Main Components
+  <a href="#requirements" class="md-nav__link">
+    Requirements
   </a>
-  
-    <nav class="md-nav" aria-label="Main Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#micro-controler" class="md-nav__link">
-    Micro Controler
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#motor-driver" class="md-nav__link">
-    Motor Driver
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#motor" class="md-nav__link">
-    Motor
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#battery" class="md-nav__link">
-    Battery
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#power-budget" class="md-nav__link">
-    Power Budget
+  <a href="#options" class="md-nav__link">
+    Options
   </a>
   
 </li>
@@ -707,14 +645,37 @@
   
 
 
-  <h1>Component Selection</h1>
-
-<h2 id="main-components">Main Components</h2>
-<h3 id="micro-controler">Micro Controler</h3>
-<h3 id="motor-driver">Motor Driver</h3>
-<h3 id="motor">Motor</h3>
-<h3 id="battery">Battery</h3>
-<h2 id="power-budget">Power Budget</h2>
+<h1 id="motor">Motor</h1>
+<h2 id="requirements">Requirements</h2>
+<p>The motor must be able to create an <a href="https://www.sigmaaldrich.com/US/en/support/calculators-and-apps/g-force-calculator?srsltid=AfmBOop8NaSsvon0b_BEHic9ZCmkiujIRdpJg4A7WGM2Ohh8W5gX9p2s">RCF</a> that emulates the gravity of Jupiter (25.92 m/s^2 or 2.640 times the earth’s gravity according to <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html">NASA</a>). The Innovation Hub has 3D printers with build areas of 25x21x21 cm, so the projected radius of the centrifuge as of 2/7/25 is 10.5 cm. That means the motor must achieve a loaded speed of 150 RPM. The required torque is estimated to be 4.97 mNm. This changes depending on the shape of the centrifuge the team decides to use. This number assumes a 1 cm thick, solid, PLA disk.</p>
+<h2 id="options">Options</h2>
+<table>
+<thead>
+<tr>
+<th>Components</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/6ea4ea9f-ae1e-49a3-9477-d736d1bb7b94" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image of Motor option 1" src="https://github.com/user-attachments/assets/6ea4ea9f-ae1e-49a3-9477-d736d1bb7b94" /></a> <br> 381-3642-ND <br> GEARMOTOR 150 RPM 24V PLANETARY <br> Individual Cost: $475.38 <br> <a href="https://www.digikey.com/en/products/detail/ebm-papst-inc/VG-VD4915BK1-P63-2-30/9598045">DigiKey</a></td>
+<td>RPM - This motor is rated for 150 RPM which is the fastest we will need the motor to go. <br> Torque - The torque rating of 7050 mNm is more than enough to spin the centrifuge.</td>
+<td>Expensive - The budget is <span class="arithmatex">\(60 per team member (\)</span>240 for the whole team) and I am not able to pay for this out of pocket. <br> Lead Time - The Manufacturer Standard Lead Time is listed as 16 weeks, which is too long for the project to wait.</td>
+</tr>
+<tr>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/47ec94f5-9dc7-471b-86b4-758c30d06072" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image of Motor option 2" src="https://github.com/user-attachments/assets/47ec94f5-9dc7-471b-86b4-758c30d06072" /></a>942-PAN14EE12MD-ND <br> STANDARD MTR DC BRUSH 300MM LEAD <br> Individual Cost: $4.75 <br> <a href="https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PAN14EE12MD/6035766">DigiKey</a></td>
+<td>Wire Leads - These will make it easier to connect the motor to the system than if the motor came with an encoder and all the terminals that come with that. <br> Torque - The torque rating is 4.9 mNm, which should be enough if the centrifuge is made of PLA.</td>
+<td>Gear Train Needed - This motor is rated for 12800 RPM, so a significant gear reduction will be needed to get to the preferred speed. These gears would need to be sourced or 3D printed because the motor does not come with them. <br> Voltage - It needs 12V which is much higher than the 3.3 that the microcontroller uses.</td>
+</tr>
+<tr>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/535469bf-c9b0-42f6-9837-c90bf3cc941a" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Screenshot 2025-02-07 155002" src="https://github.com/user-attachments/assets/535469bf-c9b0-42f6-9837-c90bf3cc941a" /></a> PAN14EE12AA1 <br> STANDARD MOTOR 12850 RPM 12V <br> Individual Cost: $5.22 <br> <a href="https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PAN14EE12AA1/2417070">DigiKey</a></td>
+<td>Torque - THe data sheet indicates that this motor can work with 4.9 mNm, which should be enough for our centrifuge. <br> Cost - This motor is very cost effective as it only costs $5.22.</td>
+<td>Gear Train Needed - This motor is rated for 12850 RPM, so a gear reduction will be needed. These gears would need to be sourced or 3D printed because the motor does not come with them. <br> Voltage - This motor also takes 12V, which will require a second power source.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="power-budget">Power Budget</h1>
 
 
 
