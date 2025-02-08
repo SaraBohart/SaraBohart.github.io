@@ -597,11 +597,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#micro-controler" class="md-nav__link">
-    Micro Controler
+  <a href="#microcontroler" class="md-nav__link">
+    Microcontroler
   </a>
   
-    <nav class="md-nav" aria-label="Micro Controler">
+    <nav class="md-nav" aria-label="Microcontroler">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -612,15 +612,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#options_3" class="md-nav__link">
-    Options
+  <a href="#pic" class="md-nav__link">
+    PIC
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#selection_3" class="md-nav__link">
-    Selection
+  <a href="#pins" class="md-nav__link">
+    Pins
   </a>
   
 </li>
@@ -834,11 +834,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#micro-controler" class="md-nav__link">
-    Micro Controler
+  <a href="#microcontroler" class="md-nav__link">
+    Microcontroler
   </a>
   
-    <nav class="md-nav" aria-label="Micro Controler">
+    <nav class="md-nav" aria-label="Microcontroler">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -849,15 +849,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#options_3" class="md-nav__link">
-    Options
+  <a href="#pic" class="md-nav__link">
+    PIC
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#selection_3" class="md-nav__link">
-    Selection
+  <a href="#pins" class="md-nav__link">
+    Pins
   </a>
   
 </li>
@@ -1064,27 +1064,140 @@ LM2655MTCX-3.3 is the final choice because of the price. Even with the shipping 
 <h3 id="selection_2">Selection</h3>
 <p>Option 2 <br>
 This is the best choice because it is a simplified version of the chip used in class with a data sheet that provides a lot of information on how to use it.</p>
-<h2 id="micro-controler">Micro Controler</h2>
+<h2 id="microcontroler">Microcontroler</h2>
 <h3 id="requierments_2">Requierments</h3>
-<p>The micro controller must be compatable with the motor driver, use 3.3 volts, and have easily implementable code examples like the ones given in class.</p>
-<h3 id="options_3">Options</h3>
+<p>The microcontroler needs to support the selected motor driver and communicate through UART with the sensor and the OLED systems. To accomplish this, it will need one UART and one I2C subsystem. This will be a total of 4 pins 2 for I2C and 2 for UART RX and TX.</p>
+<h3 id="pic">PIC</h3>
 <table>
 <thead>
 <tr>
-<th>Components</th>
-<th>Pros</th>
-<th>Cons</th>
+<th>ESP Info</th>
+<th>Answer</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>Model</td>
+<td>PIC18F47Q10-I/PT</td>
 <td></td>
+</tr>
+<tr>
+<td>Product Page</td>
+<td><a href="https://www.microchipdirect.com/product/PIC18F47Q10-I/PT?productLoaded=true">Microchip</a></td>
 <td></td>
+</tr>
+<tr>
+<td>Datasheet</td>
+<td><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PDF of the Datasheet</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Application Notes</td>
+<td><a href="https://www.microchip.com/en-us/application-notes/tb3282">UART</a> <br> <a href="https://www.microchip.com/en-us/application-notes/an2045">Serial EEPROMs</a></td>
+<td>It did not have application notes on I2C but it is the same family as the in-class PIC, so that should transfer over enough.</td>
+</tr>
+<tr>
+<td>Vendor Link</td>
+<td><a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47Q10-I-PT/10187786">DigiKey</a></td>
+<td>Can ship immedeately</td>
+</tr>
+<tr>
+<td>Code Examples</td>
+<td><a href="https://mplabxpress.microchip.com/mplabcloud/example?device=q10">All code examples from Microchip</a> <br> <a href="https://github.com/microchip-pic-avr-examples/pic18f47q10-cnano-i2c-write-bare/tree/1.0.4">I2C Host write data</a></td>
+<td></td>
+</tr>
+<tr>
+<td>External Resources</td>
+<td><a href="https://www.youtube.com/watch?v=8Kv0by_8SJE">I2C coding tutorial</a> <br> <a href="https://www.youtube.com/watch?v=gONuL7G5XiY">Got I2C Working!</a> <br> <a href="https://www.youtube.com/watch?v=lpwyGVEdt0Q&amp;pp=ygUGI2NpMmNp">Implemetning I2C on PIC</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Unit cost</td>
+<td>$1.65</td>
+<td></td>
+</tr>
+<tr>
+<td>Absolute Maximum Current</td>
+<td>350 mA</td>
+<td>It is the highest current any pin can take</td>
+</tr>
+<tr>
+<td>Supply Voltage Range</td>
+<td>-0.3 to +6.5 V</td>
+<td>To VDD pin</td>
+</tr>
+<tr>
+<td>Maximum GPIO Current per pin</td>
+<td>50 mA</td>
+<td>Positive or negative</td>
+</tr>
+<tr>
+<td>Supports External Interrupts?</td>
+<td>Yes</td>
+<td>They are mentioned in the Datasheet section 15.8.</td>
+</tr>
+<tr>
+<td>Required Programming Hardware, Cost</td>
+<td>ESP32</td>
+<td>No cost because one came with the class</td>
+</tr>
+<tr>
+<td>Works with MPLabX?</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>Works with Microchip Code Configurator?</td>
+<td>Yes</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h3 id="selection_3">Selection</h3>
+<h3 id="pins">Pins</h3>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th># Available</th>
+<th>Needed</th>
+<th>Associated Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPIO</td>
+<td>35</td>
+<td>0</td>
+<td>All Pins</td>
+</tr>
+<tr>
+<td>UART</td>
+<td>16</td>
+<td>2</td>
+<td>RB0-7, RC0-7</td>
+</tr>
+<tr>
+<td>I2C</td>
+<td>16</td>
+<td>2</td>
+<td>RB0-7, RC0-7</td>
+</tr>
+<tr>
+<td>Reset</td>
+<td>1</td>
+<td>1</td>
+<td>RE3</td>
+</tr>
+<tr>
+<td>OSC</td>
+<td>1</td>
+<td>0</td>
+<td>RA6</td>
+</tr>
+</tbody>
+</table>
+<p><a class="glightbox" href="https://github.com/user-attachments/assets/8d2db0ec-1ed5-4273-bc00-366cdfb26589" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Test MPLabX Project" src="https://github.com/user-attachments/assets/8d2db0ec-1ed5-4273-bc00-366cdfb26589" /></a></p>
 <h2 id="power-budget">Power Budget</h2>
 <p>Coming Soon!</p>
 
