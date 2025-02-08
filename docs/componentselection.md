@@ -95,7 +95,15 @@ I2C|16|2|RB0-7, RC0-7|
 Reset|1|1|RE3|
 OSC|1|0|RA6|
 
+### My Role
+My role as a team member is to plan and lead meetings to ensure that we are staying on track as a group. My section of the project is the actuator system. I need to design something that takes information from the distance sensor, uses that information to pick a spin speed, drives a motor to spin at that speed, and communicate that speed with the OLED system. 
+
+### Test Project
+This is a screenshot of my test project for this microcontroller.
 ![Test MPLabX Project](https://github.com/user-attachments/assets/8d2db0ec-1ed5-4273-bc00-366cdfb26589)
+
+### Selection
+As of 2/7/25, I am using the PIC18F47Q10. This microcontroller opperates with in the planned voltage, has enough pins for my design, and is used in the class, ensuring that I have many people I can turn to for advice. 
 
 ## Power Budget
 Coming Soon!
