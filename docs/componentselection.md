@@ -21,6 +21,7 @@ Option 3|Pros|Cons|
 ![Screenshot 2025-02-07 155002](https://github.com/user-attachments/assets/535469bf-c9b0-42f6-9837-c90bf3cc941a) PAN14EE12AA1 <br> STANDARD MOTOR 12850 RPM 12V <br> Individual Cost: $5.22 <br> [DigiKey](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PAN14EE12AA1/2417070) |Torque - THe data sheet indicates that this motor can work with 4.9 mNm, which should be enough for our centrifuge. <br> Cost - This motor is very cost effective as it only costs $5.22.|Gear Train Needed - This motor is rated for 12850 RPM, so a gear reduction will be needed. These gears would need to be sourced or 3D printed because the motor does not come with them. <br> Voltage - This motor also takes 12V, which will require a second power source.|
 
 ### Selection
+Option 2 <br>
 The best choice for this project is the 942-PAN14EE12MD-ND because it is the cheapest of the three and should be strong enough to power the centrifuge. While this motor will require 12V, the system can utilize a switching regulator that brings the voltage down to 3.3V for the other components.
 
 ## Switching Power Supply
@@ -40,7 +41,8 @@ Option 3|Pros|Cons|
 ![Switching Regulator Option 3](https://github.com/user-attachments/assets/1886759d-2b37-4d81-8f2f-49cedb9dd008) <br> LM2651MTCX-3.3/NOPB <br> IC REG BUCK 3.3V 1.5A 16TSSOP <br> Individual Cost: $3.93 <br> [DigiKey](https://www.digikey.com/en/products/detail/texas-instruments/LM2651MTCX-3-3-NOPB/366869)|Low Cost - It costs less than the previous Texas Instruments part <br> Datasheet - This chip comes with a datasheet.|Less Power - THe previous options offered 2.5 A while this one only gets 1.5 A <br> Buying on scale - This chip is more expensive than option 1 when buying 4.|
 
 ### Selection
-Option 1, LM2655MTCX-3.3, is the final choice because of the price. Even with the shipping fee, buying 4 of this chip is the most cost effective option. 
+Option 1 <br>
+LM2655MTCX-3.3 is the final choice because of the price. Even with the shipping fee, buying 4 of this chip is the most cost effective option. 
 
 ## Motor Driver
 ### Requierments
@@ -59,7 +61,8 @@ Option 3|Pros|Cons|
 ![Motor Driver Option 3](https://github.com/user-attachments/assets/349d41eb-22a5-4fdc-8b02-cdc659e0921e) <br> NCP51530BDR2G <br> Half Bridge (2) Driver General Purpose Power MOSFET 8-SOIC <br> Individual Cost: $2.23 <br> [DigiKey](https://www.digikey.com/en/products/detail/onsemi/NCP51530BDR2G/8636481)|Cost - This is the least expensive of the researched motor drivers. <br> Supply Voltage - This chip can run on the 12 V rail.|Very Short Datasheet - The datasheet is very short and does not have as much information as the other chips <br> Pin Names - Pin Names are different from those used in the class, so translating learning will be a step more difficult.|
 
 ### Selection
-Option 2 is the best choice because it is a simplified version of the chip used in class with a data sheet that provides a lot of information on how to use it.
+Option 2 <br>
+This is the best choice because it is a simplified version of the chip used in class with a data sheet that provides a lot of information on how to use it.
 
 ## Micro Controler
 ### Requierments
