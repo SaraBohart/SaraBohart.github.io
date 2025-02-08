@@ -64,14 +64,38 @@ Option 3|Pros|Cons|
 Option 2 <br>
 This is the best choice because it is a simplified version of the chip used in class with a data sheet that provides a lot of information on how to use it.
 
-## Micro Controler
+## Microcontroler
 ### Requierments
-The micro controller must be compatable with the motor driver, use 3.3 volts, and have easily implementable code examples like the ones given in class.
-### Options
-Components|Pros|Cons|
+The microcontroler needs to support the selected motor driver and communicate through UART with the sensor and the OLED systems. To accomplish this, it will need one UART and one I2C subsystem. This will be a total of 4 pins 2 for I2C and 2 for UART RX and TX.
+### PIC 
+ESP Info|Answer|Notes|
 ----------|----|----|
+Model|PIC18F47Q10-I/PT| |
+Product Page|[Microchip](https://www.microchipdirect.com/product/PIC18F47Q10-I/PT?productLoaded=true)| |
+Datasheet|[PDF of the Datasheet](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf)| |
+Application Notes|[UART](https://www.microchip.com/en-us/application-notes/tb3282) <br> [Serial EEPROMs](https://www.microchip.com/en-us/application-notes/an2045)|It did not have application notes on I2C but it is the same family as the in-class PIC, so that should transfer over enough.|
+Vendor Link|[DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47Q10-I-PT/10187786)|Can ship immedeately|
+Code Examples|[All code examples from Microchip](https://mplabxpress.microchip.com/mplabcloud/example?device=q10) <br> [I2C Host write data](https://github.com/microchip-pic-avr-examples/pic18f47q10-cnano-i2c-write-bare/tree/1.0.4)||
+External Resources|[I2C coding tutorial](https://www.youtube.com/watch?v=8Kv0by_8SJE) <br> [Got I2C Working!](https://www.youtube.com/watch?v=gONuL7G5XiY) <br> [Implemetning I2C on PIC](https://www.youtube.com/watch?v=lpwyGVEdt0Q&pp=ygUGI2NpMmNp)||
+Unit cost|$1.65||
+Absolute Maximum Current|350 mA|It is the highest current any pin can take|
+Supply Voltage Range|-0.3 to +6.5 V|To VDD pin|
+Maximum GPIO Current per pin|50 mA|Positive or negative|
+Supports External Interrupts?|Yes|They are mentioned in the Datasheet section 15.8.
+Required Programming Hardware, Cost|ESP32|No cost because one came with the class
+Works with MPLabX?|Yes||
+Works with Microchip Code Configurator?|Yes||
 
-### Selection
+### Pins
+Module|# Available|Needed|Associated Pins|
+------|-----------|------|---------------|
+GPIO|35|0|All Pins|
+UART|16|2|RB0-7, RC0-7|
+I2C|16|2|RB0-7, RC0-7|
+Reset|1|1|RE3|
+OSC|1|0|RA6|
+
+![Test MPLabX Project](https://github.com/user-attachments/assets/8d2db0ec-1ed5-4273-bc00-366cdfb26589)
 
 ## Power Budget
 Coming Soon!
