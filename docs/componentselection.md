@@ -21,17 +21,21 @@ The best choice for this project is the 942-PAN14EE12MD-ND because it is the che
 ### Requierments
 The switching voltage regulator must output 3.3 V from a 12 V source. 
 ### Options
-Components|Pros|Cons
-----------|----|----
+Components|Pros|Cons|
+----------|----|----|
+![Switching Regulator Option 1](https://github.com/user-attachments/assets/83e569cc-354f-4664-b740-2c4536e540f7) <br> LM2655MTCX-3.3 <br> IC REG BUCK 3.3V 2.5A 16TSSOP <br> Individual Cost: $1.19 <br> [DigikKey](https://www.digikey.com/en/products/detail/rochester-electronics-llc/LM2655MTCX-3-3/12600721)|Rated for 12 V - This chip can operate between 4 and 14 V, which is in range of what the motor requires <br> Fixed 3.3 V Output - The chip has a fixed output of 3.3, meaning no matter what, the microcontroller will receive 3.3 V. |Shipping Fee - The shipping fee for this chip is $8 because it is a marketplace product. <br> Only one output - There is only one output, so all 3.3 V power will be drawn from the single pin. |
+![Switching Regulator Option 2](https://github.com/user-attachments/assets/0c30a12a-19e6-4f21-a0c8-68c906158751) <br> LM2655MTC-3.3/NOPB <br> IC REG BUCK 3.3V 2.5A 16TSSOP <br> Individual Cost: $4.66 <br> [DigiKey](https://www.digikey.com/en/products/detail/texas-instruments/LM2655MTC-3-3-NOPB/363755)|Texas Instruments - This is a big name manufacturer that can be trusted. <br> No Shipping fee - There is no additional shipping fee. <br> Same Ratings - This part has the same ratings as option 1.|Expensive - Despite having the same ratings as option 1, this chip is significantly more expensive. <br> Many pins - This chip has a lot of small pins that need to be soldered very carefully without overheating the chip.|
+![Switching Regulator Option 3](https://github.com/user-attachments/assets/1886759d-2b37-4d81-8f2f-49cedb9dd008) <br> LM2651MTCX-3.3/NOPB <br> IC REG BUCK 3.3V 1.5A 16TSSOP <br> Individual Cost: $3.93 <br> [DigiKey](https://www.digikey.com/en/products/detail/texas-instruments/LM2651MTCX-3-3-NOPB/366869)|Low Cost - It costs less than the previous Texas Instruments part <br> Datasheet - This chip comes with a datasheet.|Less Power - THe previous options offered 2.5 A while this one only gets 1.5 A <br> Buying on scale - This chip is more expensive than option 1 when buying 4.|
 
 ### Selection
+Option 1, LM2655MTCX-3.3, is the final choice because of the price. Even with the shipping fee, buying 4 of this chip is the most cost effective option. 
 
 ## Motor Driver
 ### Requierments
 The motor driver must use eirthe SPI or I2C communication per the project requierments.
 ### Options
-Components|Pros|Cons
-----------|----|----
+Components|Pros|Cons|
+----------|----|----|
 
 ### Selection
 
@@ -39,8 +43,8 @@ Components|Pros|Cons
 ### Requierments
 The micro controller must be compatable with the motor driver, use 3.3 volts, and have easily implementable code examples like the ones given in class.
 ### Options
-Components|Pros|Cons
-----------|----|----
+Components|Pros|Cons|
+----------|----|----|
 
 ### Selection
 
