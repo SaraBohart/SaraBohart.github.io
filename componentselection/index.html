@@ -977,13 +977,24 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/15862760-4163-4db0-8e28-1f16d2803363" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Motor Driver Option 1" src="https://github.com/user-attachments/assets/15862760-4163-4db0-8e28-1f16d2803363" /></a> <br> IFX9201SGAUMA1 <br> IC HALF BRIDGE DRIVER 6A 12DSO <br> Individual Cost: $3.68 <br> <a href="https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415560?gclsrc=aw.ds&amp;&amp;utm_adgroup=&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=PMax%20Shopping_Product_Medium%20ROAS%20Categories&amp;utm_term=&amp;utm_content=&amp;utm_id=go_cmp-20223376311_adg-_ad-__dev-c_ext-_prd-5415560_sig-Cj0KCQiA-5a9BhCBARIsACwMkJ6eR_NkTtW9b4WwyVvB6PQpvB989ygKcRpoiPeZjfR2-aoemkHsjqAaAlCVEALw_wcB&amp;gad_source=1&amp;gclid=Cj0KCQiA-5a9BhCBARIsACwMkJ6eR_NkTtW9b4WwyVvB6PQpvB989ygKcRpoiPeZjfR2-aoemkHsjqAaAlCVEALw_wcB&amp;gclsrc=aw.ds">DigiKey</a></td>
+<td>In Class Example - This is the chip that we use in class, so there are plenty of resources I can use for this device. <br> Supply Voltage Range - The chip requires 5-36 V, which includes 12 V, so no new regulator is needed.</td>
+<td>Supply Voltage Range - 3.3 V is too low for this cip, so It could not pull power from the voltage regulator. <br> Too many features - This chip has the capacity to be controlled by PWM, but the project requires that only I2C or SPI are used.</td>
+</tr>
+<tr>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/ce842184-4fc4-433f-be93-381d6b27d00f" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Motor Driver Option 2" src="https://github.com/user-attachments/assets/ce842184-4fc4-433f-be93-381d6b27d00f" /></a> <br> NCV7703CD2R2G <br> IC HALF BRIDGE DRVR 1.1A 14SOIC <br> Individual Cost: $3.60 <br>  <a href="https://www.digikey.com/en/products/detail/onsemi/NCV7703CD2R2G/7325621">DigiKey</a></td>
+<td>Supply Voltage - The supply voltage range is 3.15 - 5.25 V, so this chip can operate on the 3.3 V regulator. <br> Only uses Serial Communication - There is no other option than what is required by the project.</td>
+<td>New chip - THis chip is not used in the class, so new bugs will be harder to address. <br> Lead Time - The Manufacturer Standard Lead TIme is 33 Weeks, so if DigiKey runs out of this part before we purchase it, the team will not be able to use this part.</td>
+</tr>
+<tr>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/349d41eb-22a5-4fdc-8b02-cdc659e0921e" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Motor Driver Option 3" src="https://github.com/user-attachments/assets/349d41eb-22a5-4fdc-8b02-cdc659e0921e" /></a> <br> NCP51530BDR2G <br> Half Bridge (2) Driver General Purpose Power MOSFET 8-SOIC <br> Individual Cost: $2.23 <br> <a href="https://www.digikey.com/en/products/detail/onsemi/NCP51530BDR2G/8636481">DigiKey</a></td>
+<td>Cost - This is the least expensive of the researched motor drivers. <br> Supply Voltage - This chip can run on the 12 V rail.</td>
+<td>Very Short Datasheet - The datasheet is very short and does not have as much information as the other chips <br> Pin Names - Pin Names are different from those used in the class, so translating learning will be a step more difficult.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="selection_2">Selection</h3>
+<p>Option 2 is the best choice because it is a simplified version of the chip used in class with a data sheet that provides a lot of information on how to use it.</p>
 <h2 id="micro-controler">Micro Controler</h2>
 <h3 id="requierments_2">Requierments</h3>
 <p>The micro controller must be compatable with the motor driver, use 3.3 volts, and have easily implementable code examples like the ones given in class.</p>
