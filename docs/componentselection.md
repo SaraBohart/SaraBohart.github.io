@@ -40,9 +40,14 @@ Option 3|Pros|Cons|
 ----------|----|----|
 ![Switching Regulator Option 3](https://github.com/user-attachments/assets/1886759d-2b37-4d81-8f2f-49cedb9dd008) <br> LM2651MTCX-3.3/NOPB <br> IC REG BUCK 3.3V 1.5A 16TSSOP <br> Individual Cost: $3.93 <br> [DigiKey](https://www.digikey.com/en/products/detail/texas-instruments/LM2651MTCX-3-3-NOPB/366869)|Low Cost - It costs less than the previous Texas Instruments part <br> Datasheet - This chip comes with a datasheet.|Less Power - THe previous options offered 2.5 A while this one only gets 1.5 A <br> Buying on scale - This chip is more expensive than option 1 when buying 4.|
 
+Option 4|Pros|Cons|
+----------|----|----|
+![Screenshot 2025-02-20 160933](https://github.com/user-attachments/assets/a97830bc-183c-40a6-b805-0942c42c4421)
+<br> LM2575-3.3WU-TR <br> IC REG BUCK 3.3V 1A TO263-5 <br> Individual Cost: $1.75 <br> [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646) |Low Cost - only $1.75 each.<br>Altium - The manufacturer search in Altium returned this with the green IC symbol, so it will be more conveinient for ECAD.|Fixed output - This part can only do 3.3V out. <br>Minimum Circuit - the minimum circuit includes an inductor and a diode, which I will need to find and buy|
+
 ### Selection
-Option 2 <br>
-Option 2 is optimal because it has free shipping, a low price, and works nicely with Altium. 
+Option 4 <br>
+Option 4 is cost effective, simple, and overall the best option. I have also used a similar component before, so it will be familiar to work with. 
 
 ## Motor Driver
 ### Requierments
