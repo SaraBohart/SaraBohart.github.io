@@ -41,8 +41,8 @@ Option 3|Pros|Cons|
 ![Switching Regulator Option 3](https://github.com/user-attachments/assets/1886759d-2b37-4d81-8f2f-49cedb9dd008) <br> LM2651MTCX-3.3/NOPB <br> IC REG BUCK 3.3V 1.5A 16TSSOP <br> Individual Cost: $3.93 <br> [DigiKey](https://www.digikey.com/en/products/detail/texas-instruments/LM2651MTCX-3-3-NOPB/366869)|Low Cost - It costs less than the previous Texas Instruments part <br> Datasheet - This chip comes with a datasheet.|Less Power - THe previous options offered 2.5 A while this one only gets 1.5 A <br> Buying on scale - This chip is more expensive than option 1 when buying 4.|
 
 ### Selection
-Option 1 <br>
-LM2655MTCX-3.3 is the final choice because of the price. Even with the shipping fee, buying 4 of this chip is the most cost effective option. 
+Option 2 <br>
+Option 2 is optimal because it has free shipping, a low price, and works nicely with Altium. 
 
 ## Motor Driver
 ### Requierments
