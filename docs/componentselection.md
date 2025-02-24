@@ -113,4 +113,5 @@ This is a screenshot of my test project for this microcontroller.
 As of 2/7/25, I am using the PIC18F47Q10. This microcontroller opperates with in the planned voltage, has enough pins for my design, and is used in the class, ensuring that I have many people I can turn to for advice. 
 
 ## Power Budget
-Coming Soon!
+[PowerBudget.pdf](https://github.com/user-attachments/files/18937809/PowerBudget.pdf)
+This power budget assumes that the system will be powered using an outlet via an adapter such as [this](https://www.amazon.com/Adapter-Signcomplex-100-240V-Transformers-Switching/dp/B074HRM5D4?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A3AI1Y9BXQD9K&th=1). Since the power source is an outlet and not a battery, the battery life is inefinite. It makes more sense for this project to be powered through a stationary wall outlet because it would be used in an enviornment like a museum, where the motor will not need to be transported often.
