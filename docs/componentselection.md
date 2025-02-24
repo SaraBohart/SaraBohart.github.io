@@ -22,7 +22,7 @@ Option 3|Pros|Cons|
 
 Option 4|Pros|Cons|
 ----------|----|----|
-![Image of Motor option 4](https://github.com/user-attachments/assets/c8fe35e3-f568-4741-b343-7b535367684b) 25SG-370CA <br>6V 25D Metal Gearmotor, 280rpm <br>Individual Cost: $6.58 <br> [RoboShop](https://www.robotshop.com/products/e-s-motor-25d-metal-gearmotor-1360rpm?srsltid=AfmBOoqKxKQqgEDoPnsg7-sIEMatTtTmLYXUD77b3mt3c88G68WY_w7RO8E&gQT=1v)|Cost - For a gear motor this is very cheap. <br> Comes with mounting - There is an aluminum mount for the shaft and mounting holes to attach the motor to the project. |New Vendor - This motor would require another order form because it is not from digikey <br> Lack of datasheet - The only specs given are on the vendor's cite <br>Shipping fee - The shipping fee is estimated to be at least $16.50|
+![Image of Motor option 4](https://github.com/user-attachments/assets/30ba0258-de9e-4d76-901e-75019b081028) 25SG-370CA <br>6V 25D Metal Gearmotor, 280rpm <br>Individual Cost: $6.58 <br> [RoboShop](https://www.robotshop.com/products/e-s-motor-6v-25d-metal-gearmotor-280rpm?pr_prod_strat=e5_desc&pr_rec_id=40bbe8f7d&pr_rec_pid=7487431409825&pr_ref_pid=7487467978913&pr_seq=uniform)|Cost - For a gear motor this is not very expencive. <br> Comes with mounting - There is an aluminum mount for the shaft and mounting holes to attach the motor to the project. |New Vendor - This motor would require another order form because it is not from digikey <br> Lack of datasheet - The only specs given are on the vendor's cite <br>Shipping fee - The shipping fee is estimated to be at least $16.50|
 
 ### Selection
 Option 4 <br>
