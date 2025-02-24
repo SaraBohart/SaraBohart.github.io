@@ -18,11 +18,11 @@ Option 2|Pros|Cons|
 
 Option 3|Pros|Cons|
 ----------|----|----|
-![Screenshot 2025-02-07 155002](https://github.com/user-attachments/assets/535469bf-c9b0-42f6-9837-c90bf3cc941a) PAN14EE12AA1 <br> STANDARD MOTOR 12850 RPM 12V <br> Individual Cost: $5.22 <br> [DigiKey](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PAN14EE12AA1/2417070) |Torque - The data sheet indicates that this motor can work with 4.9 mNm, which should be enough for our centrifuge. <br> Cost - This motor is very cost effective as it only costs $5.22.|Gear Train Needed - This motor is rated for 12850 RPM, so a gear reduction will be needed. These gears would need to be sourced or 3D printed because the motor does not come with them. <br> Voltage - This motor also takes 12V, which will require a second power source.|
+![Image of Motor option 3](https://github.com/user-attachments/assets/535469bf-c9b0-42f6-9837-c90bf3cc941a) PAN14EE12AA1 <br> STANDARD MOTOR 12850 RPM 12V <br> Individual Cost: $5.22 <br> [DigiKey](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PAN14EE12AA1/2417070) |Torque - The data sheet indicates that this motor can work with 4.9 mNm, which should be enough for our centrifuge. <br> Cost - This motor is very cost effective as it only costs $5.22.|Gear Train Needed - This motor is rated for 12850 RPM, so a gear reduction will be needed. These gears would need to be sourced or 3D printed because the motor does not come with them. <br> Voltage - This motor also takes 12V, which will require a second power source.|
 
 Option 4|Pros|Cons|
 ----------|----|----|
-![Motor4](https://github.com/user-attachments/assets/c8fe35e3-f568-4741-b343-7b535367684b) 25SG-370CA <br>6V 25D Metal Gearmotor, 280rpm <br> <br>Individual Cost: $6.58 <br> [RoboShop](https://www.robotshop.com/products/e-s-motor-25d-metal-gearmotor-1360rpm?srsltid=AfmBOoqKxKQqgEDoPnsg7-sIEMatTtTmLYXUD77b3mt3c88G68WY_w7RO8E&gQT=1v)|Cost - For a gear motor this is very cheap. <br> Comes with mounting - There is an aluminum mount for the shaft and mounting holes to attach the motor to the project. |New Vendor - This motor would require another order form because it is not from digikey <br> Lack of datasheet - The only specs given are on the vendor's cite <br>Shipping fee - The shipping fee is estimated to be at least $16.50|
+![Image of Motor option 4](https://github.com/user-attachments/assets/c8fe35e3-f568-4741-b343-7b535367684b) 25SG-370CA <br>6V 25D Metal Gearmotor, 280rpm <br>Individual Cost: $6.58 <br> [RoboShop](https://www.robotshop.com/products/e-s-motor-25d-metal-gearmotor-1360rpm?srsltid=AfmBOoqKxKQqgEDoPnsg7-sIEMatTtTmLYXUD77b3mt3c88G68WY_w7RO8E&gQT=1v)|Cost - For a gear motor this is very cheap. <br> Comes with mounting - There is an aluminum mount for the shaft and mounting holes to attach the motor to the project. |New Vendor - This motor would require another order form because it is not from digikey <br> Lack of datasheet - The only specs given are on the vendor's cite <br>Shipping fee - The shipping fee is estimated to be at least $16.50|
 
 ### Selection
 Option 4 <br>
@@ -46,7 +46,7 @@ Option 3|Pros|Cons|
 
 Option 4|Pros|Cons|
 ----------|----|----|
-![Screenshot 2025-02-20 160933](https://github.com/user-attachments/assets/a97830bc-183c-40a6-b805-0942c42c4421)<br> LM2575-3.3WU-TR <br> IC REG BUCK 3.3V 1A TO263-5 <br> Individual Cost: $1.75 <br> [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646) |Low Cost - only $1.75 each.<br>Altium - The manufacturer search in Altium returned this with the green IC symbol, so it will be more conveinient for ECAD.|Fixed output - This part can only do 3.3V out. <br>Minimum Circuit - the minimum circuit includes an inductor and a diode, which I will need to find and buy|
+![Switching Regulator Option 4](https://github.com/user-attachments/assets/070e5409-0b27-43fa-841d-59d56aba0cfe)<br> LM2575D2T-3.3R4G <br> IC REG BUCK 3.3V 1A D2PAK-5 <br> Individual Cost: $3.32 <br> [DigiKey](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688) |Simmilar to a previus part - This part is similar to another mart that was used in the class, which means it will be easy to implement. <br>Altium - The manufacturer search in Altium returned this with the green IC symbol, so it will be more conveinient for ECAD.|Fixed output - This part can only do 3.3V out. <br>Minimum Circuit - the minimum circuit includes an inductor and a diode, which I will need to find and buy|
 
 ### Selection
 Option 4 <br>
