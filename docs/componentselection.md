@@ -46,7 +46,7 @@ Option 3|Pros|Cons|
 
 Option 4|Pros|Cons|
 ----------|----|----|
-![Switching Regulator Option 4](https://github.com/user-attachments/assets/070e5409-0b27-43fa-841d-59d56aba0cfe)<br> LM2575D2T-3.3R4G <br> IC REG BUCK 3.3V 1A D2PAK-5 <br> Individual Cost: $3.32 <br> [DigiKey](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688) |Simmilar to a previus part - This part is similar to another mart that was used in the class, which means it will be easy to implement. <br>Altium - The manufacturer search in Altium returned this with the green IC symbol, so it will be more conveinient for ECAD.|Fixed output - This part can only do 3.3V out. <br>Minimum Circuit - the minimum circuit includes an inductor and a diode, which I will need to find and buy|
+![Switching Regulator Option 4](https://github.com/user-attachments/assets/070e5409-0b27-43fa-841d-59d56aba0cfe) <br> LM2575D2T-3.3R4G <br> IC REG BUCK 3.3V 1A D2PAK-5 <br> Individual Cost: $3.32 <br> [DigiKey](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688) |Simmilar to a previus part - This part is similar to another mart that was used in the class, which means it will be easy to implement. <br>Altium - The manufacturer search in Altium returned this with the green IC symbol, so it will be more conveinient for ECAD.|Fixed output - This part can only do 3.3V out. <br>Minimum Circuit - the minimum circuit includes an inductor and a diode, which I will need to find and buy|
 
 ### Selection
 Option 4 <br>
