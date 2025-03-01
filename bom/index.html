@@ -12,13 +12,13 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/blockdiagram/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/bom/">
       
       
-        <link rel="prev" href="../Schematic/">
+        <link rel="prev" href="../blockdiagram/">
       
       
-        <link rel="next" href="../bom/">
+        <link rel="next" href="../componentselection/">
       
       
       <link rel="icon" href="../static/logo.png">
@@ -29,7 +29,7 @@
 
     
       
-        <title>Block Diagram - EGR314 Sara Bohart</title>
+        <title>Schematic - EGR314 Sara Bohart</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#individual-block-diagram" class="md-skip">
+        <a href="#bill-of-materials" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Block Diagram
+              Schematic
             
           </span>
         </div>
@@ -234,11 +234,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../blockdiagram/" class="md-tabs__link">
         
   
     
@@ -253,9 +251,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../bom/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -393,6 +393,25 @@
       
   
   
+  
+    <li class="md-nav__item">
+      <a href="../blockdiagram/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Block Diagram
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -406,7 +425,7 @@
           
   
   <span class="md-ellipsis">
-    Block Diagram
+    Schematic
   </span>
   
 
@@ -417,7 +436,7 @@
         
   
   <span class="md-ellipsis">
-    Block Diagram
+    Schematic
   </span>
   
 
@@ -437,15 +456,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#individual-block-diagram" class="md-nav__link">
-    Individual Block Diagram
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-plan" class="md-nav__link">
-    The Plan
+  <a href="#bill-of-materials" class="md-nav__link">
+    Bill of Materials
   </a>
   
 </li>
@@ -454,25 +466,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bom/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Schematic
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -540,15 +533,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#individual-block-diagram" class="md-nav__link">
-    Individual Block Diagram
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-plan" class="md-nav__link">
-    The Plan
+  <a href="#bill-of-materials" class="md-nav__link">
+    Bill of Materials
   </a>
   
 </li>
@@ -568,7 +554,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/blockdiagram.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/bom.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -576,16 +562,10 @@
   
 
 
-  <h1>Block Diagram</h1>
+  <h1>Schematic</h1>
 
-<p>This block diagram is for the actuator subsystem. It will use a digital motor driver to change the speed of the motor based on data from the distance sensor.</p>
-<h2 id="individual-block-diagram">Individual Block Diagram</h2>
-<p><a class="glightbox" href="https://github.com/user-attachments/assets/3a50993e-f810-406e-8364-014cd8c868e7" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SaraBohartBlockDigramMotor" src="https://github.com/user-attachments/assets/3a50993e-f810-406e-8364-014cd8c868e7" /></a>
-Updated 2/24/25</p>
-<h2 id="the-plan">The Plan</h2>
-<p>The project that this system is designed for is emulating the gravity of different planets using a centrifuge. I am in charge of the motor, which needs to get information from the distance sensor to know how fast to spin the motor to emulate the selected gravity. It will also share the current PWM value with the OLED so it can calculate and display the centrifugal force that the motor is causing.<br />
-Per the project requirements, the motor must communicate with the microcontroller through an “complex motor driver IC”. I have decided to use the IFX9201SGAUMA1 from Infineon Technologies because we are also using that component in class. This will remove a layer of complexity, allowing me more time to focus on other areas of the course and the project, and save some money as my team will not have to buy as many parts. For the same reason, the microcontroller I have chosen is the DIP version of the PIC18F47Q10. Since both of these components are used in the class, our team saves time and money, which can be used on other aspects of the project.<br />
-More research needs to be done on gravity emulation. I need to know how the size of the centrifuge will affect the power required from the motor. Once those calculations are done, the motor will be placed as shown in the block diagram. It will be controlled by the motor driver, which is controlled by the microcontroller, which is responding to input from the distance sensor.</p>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<p><a href="https://github.com/user-attachments/files/19035200/BOMv1.4.xlsx">BOMv1.4.xlsx</a></p>
 
 
 
@@ -613,7 +593,7 @@ More research needs to be done on gravity emulation. I need to know how the size
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Schematic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Schematic" rel="prev">
+          <a href="../blockdiagram/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Block Diagram" rel="prev">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -623,20 +603,20 @@ More research needs to be done on gravity emulation. I need to know how the size
                 Previous
               </span>
               <div class="md-ellipsis">
-                Schematic
+                Block Diagram
               </div>
             </div>
           </a>
         
         
           
-          <a href="../bom/" class="md-footer__link md-footer__link--next" aria-label="Next: Schematic" rel="next">
+          <a href="../componentselection/" class="md-footer__link md-footer__link--next" aria-label="Next: Component Selection" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Schematic
+                Component Selection
               </div>
             </div>
             <div class="md-footer__button md-icon">
