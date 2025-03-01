@@ -46,7 +46,8 @@ Option 3|Pros|Cons|
 
 Option 4|Pros|Cons|
 ----------|----|----|
-![Screenshot 2025-02-20 160933](https://github.com/user-attachments/assets/a97830bc-183c-40a6-b805-0942c42c4421)<br> LM2576-3.3WU <br> IC REG BUCK 3.3V 3A TO263-5 <br> Individual Cost: $1.75 <br> [DigiKey]https://www.digikey.com/en/products/detail/microchip-technology/LM2576-3-3WU/1027681) |Low Cost - only $1.75 each.<br>Current Output - the output current is 3A which is enough for the components this is powering.|Fixed output - This part can only do 3.3V out. <br>Minimum Circuit - the minimum circuit includes an inductor and a diode, which I will need to find and buy|
+![Screenshot 2025-02-20 160933](https://github.com/user-attachments/assets/a97830bc-183c-40a6-b805-0942c42c4421)<br> LM2576-3.3WU <br> IC REG BUCK 3.3V 3A TO263-5 <br> Individual Cost: $1.75 <br> [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/LM2576-3-3WU/1027681) |Low Cost - only $1.75 each.<br>Current Output - the output current is 3A which is enough for the components this is powering.|Fixed output - This part can only do 3.3V out. <br>Minimum Circuit - the minimum circuit includes an inductor and a diode, which I will need to find and buy|
+
 ### Selection
 Option 4 <br>
 Option 4 is cost effective, simple, and overall the best option. I have also used a similar component before, so it will be familiar to work with. 
