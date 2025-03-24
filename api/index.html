@@ -461,9 +461,36 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#from-xander" class="md-nav__link">
+    From Xander
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-ella" class="md-nav__link">
+    To Ella
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-julia" class="md-nav__link">
+    From Julia
+  </a>
+  
+    <nav class="md-nav" aria-label="From Julia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#code" class="md-nav__link">
     Code
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -583,9 +610,36 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#from-xander" class="md-nav__link">
+    From Xander
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-ella" class="md-nav__link">
+    To Ella
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-julia" class="md-nav__link">
+    From Julia
+  </a>
+  
+    <nav class="md-nav" aria-label="From Julia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#code" class="md-nav__link">
     Code
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -612,61 +666,116 @@
   
 
 
-  <h1>API</h1>
-
 <h2 id="messages">Messages</h2>
+<h1 id="from-xander">From Xander</h1>
 <table>
 <thead>
 <tr>
 <th>&nbsp;</th>
 <th>Byte 1</th>
 <th>Byte 2</th>
-<th>Byte 3</th>
-<th>Byte 4</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Name</td>
-<td>ChangeSpeed</td>
-<td>CheckDistance</td>
 <td>ChangeDirection</td>
-<td>MotorSpeed</td>
+<td>ChangeSpeed</td>
 </tr>
 <tr>
 <td>Type</td>
-<td>int16_t</td>
-<td>uint16_t</td>
 <td>int16_t</td>
 <td>int16_t</td>
 </tr>
 <tr>
 <td>Min</td>
+<td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>-200</td>
 </tr>
 <tr>
 <td>Max</td>
+<td>1</td>
 <td>9</td>
-<td>1</td>
-<td>1</td>
-<td>200</td>
 </tr>
 <tr>
 <td>Example</td>
-<td>5</td>
 <td>1</td>
-<td>0</td>
-<td>150</td>
+<td>5</td>
 </tr>
 <tr>
 <td>Use</td>
 <td>From HMI to select a planet</td>
-<td>From sensor to check for safety</td>
 <td>From Direct drive mode to set direction</td>
+</tr>
+</tbody>
+</table>
+<h1 id="to-ella">To Ella</h1>
+<table>
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>Byte 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>MotorSpeed</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>int16_t</td>
+</tr>
+<tr>
+<td>Min</td>
+<td>-200</td>
+</tr>
+<tr>
+<td>Max</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Use</td>
 <td>To WiFi to communicate current RPM</td>
+</tr>
+</tbody>
+</table>
+<h1 id="from-julia">From Julia</h1>
+<table>
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>Byte 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>CheckDistance</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>uint16_t</td>
+</tr>
+<tr>
+<td>Min</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Use</td>
+<td>From sensor to check for safety</td>
 </tr>
 </tbody>
 </table>
