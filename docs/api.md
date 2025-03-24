@@ -5,14 +5,35 @@ tags:
 - tag2
 ---
 ## Messages
-&nbsp;|Byte 1|Byte 2|Byte 3|Byte 4|
-------|------|------|------|------|
-Name|ChangeSpeed|CheckDistance|ChangeDirection|MotorSpeed|
-Type|int16_t|uint16_t|int16_t|int16_t|
-Min|1|0|0|-200|
-Max|9|1|1|200|
-Example|5|1|0|150|
-Use|From HMI to select a planet|From sensor to check for safety|From Direct drive mode to set direction|To WiFi to communicate current RPM|
+# From Xander
+&nbsp;|Byte 1|Byte 2|
+------|------|------|
+Name|ChangeDirection|ChangeSpeed|
+Type|int16_t|int16_t        |
+Min|0|1|
+Max|1|9
+Example|1|5|
+Use|From HMI to select a planet|From Direct drive mode to set direction|
+
+# To Ella
+&nbsp;|Byte 1|
+------|------|
+Name|MotorSpeed|
+Type|int16_t|
+Min|-200|
+Max|200|
+Example|150|
+Use|To WiFi to communicate current RPM|
+
+# From Julia
+&nbsp;|Byte 1|
+------|------|
+Name    |CheckDistance|
+Type    |uint16_t     |
+Min     |0            |
+Max     |1            |
+Example |1            |
+Use|From sensor to check for safety|
 
 ## Code
 [APIDraft1.zip](https://github.com/user-attachments/files/19398071/APIDraft1.zip) <br>
