@@ -4,8 +4,8 @@ tags:
 - tag1
 - tag2
 ---
-## Messages
-# From Xander
+# Messages
+## From Xander
 &nbsp;|Byte 1|Byte 2|
 ------|------|------|
 Name|ChangeDirection|ChangeSpeed|
@@ -15,7 +15,7 @@ Max|1|9
 Example|1|5|
 Use|From HMI to select a planet|From Direct drive mode to set direction|
 
-# To Ella
+## To Ella
 &nbsp;|Byte 1|
 ------|------|
 Name|MotorSpeed|
@@ -25,7 +25,7 @@ Max|200|
 Example|150|
 Use|To WiFi to communicate current RPM|
 
-# From Julia
+## From Julia
 &nbsp;|Byte 1|
 ------|------|
 Name    |CheckDistance|
@@ -35,7 +35,7 @@ Max     |1            |
 Example |1            |
 Use|From sensor to check for safety|
 
-## Code
+# Code
 [APIv3.zip](https://github.com/user-attachments/files/19558078/APIv3.zip) <br>
 This is the first draft of my message processing code. It is untested, but it should receive a uart string, test if the string is compliant with the expected structure, and extract the correct information based on where it lies in the string. Then it should write a string containing the current RPM of the motor amd send it over uart. <br>
 [UARTDebuggingAndViewing.zip](https://github.com/user-attachments/files/19558083/UARTDebuggingAndViewing.zip)<br>
