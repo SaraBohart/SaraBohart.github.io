@@ -9,7 +9,7 @@ tags:
 &nbsp;|Byte 1|Byte 2|
 ------|------|------|
 Name|ChangeDirection|ChangeSpeed|
-Type|int16_t|int16_t        |
+Type|char|char        |
 Min|0|1|
 Max|1|9
 Example|1|5|
@@ -19,7 +19,7 @@ Use|From HMI to select a planet|From Direct drive mode to set direction|
 &nbsp;|Byte 1|
 ------|------|
 Name|MotorSpeed|
-Type|int16_t|
+Type|int|
 Min|-200|
 Max|200|
 Example|150|
@@ -29,7 +29,7 @@ Use|To WiFi to communicate current RPM|
 &nbsp;|Byte 1|
 ------|------|
 Name    |CheckDistance|
-Type    |uint16_t     |
+Type    |uchar     |
 Min     |0            |
 Max     |1            |
 Example |1            |
