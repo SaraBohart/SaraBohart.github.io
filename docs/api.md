@@ -29,12 +29,14 @@ Use|To WiFi to communicate current RPM|
 &nbsp;|Byte 1|
 ------|------|
 Name    |CheckDistance|
-Type    |uchar     |
+Type    |char     |
 Min     |0            |
 Max     |1            |
 Example |1            |
 Use|From sensor to check for safety|
 
 ## Code
-[MessageTest.zip](https://github.com/user-attachments/files/19545230/MessageTest.zip) <br>
-This is the first draft of my message processing code. It is untested, but it should receive a uart string, test if the string is compliant with the expected structure, and extract the correct information based on where it lies in the string. Then it should write a string containing the current RPM of the motor amd send it over uart.
+[APIv3.zip](https://github.com/user-attachments/files/19558078/APIv3.zip) <br>
+This is the first draft of my message processing code. It is untested, but it should receive a uart string, test if the string is compliant with the expected structure, and extract the correct information based on where it lies in the string. Then it should write a string containing the current RPM of the motor amd send it over uart. <br>
+[UARTDebuggingAndViewing.zip](https://github.com/user-attachments/files/19558083/UARTDebuggingAndViewing.zip)<br>
+This workspace allows you to see what the PIC is sending out over UART.
