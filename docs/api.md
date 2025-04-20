@@ -4,19 +4,44 @@ tags:
 - tag1
 - tag2
 ---
+## Standard Message structure
+Byte 1|Byte 2|Byte 3|Byte 4|Byte 5|Byte 6|Byte 7|Byte 8|
+------|------|------|------|------|------|------|------|
+A|Z|Sender Initial|Receiver Initial|Data 1|Data 2|Y|B|
+ <br>
+
+Note: Data 2 does not exist in some messages. A message containing one data point would look like this. <br>
+Byte 1|Byte 2|Byte 3|Byte 4|Byte 5|Byte 6|Byte 7|
+------|------|------|------|------|------|------|
+A|Z|Sender Initial|Receiver Initial|Data 1|Y|B|
+<br>
+The message handeling code is designed to notice the start sequence, AZ, and look at the subsequent characters until it notices that the string is too long, or it reaches the end sequence, YB. It will either pass, destroy, or filter that data based on if the receiver initial is B. Depending on the initials, the code will filter out data that contains invalid characters for that message.
+<br>
+The initials for all of my team are shown bellow. <br>
+
+Member|Initial|
+------|-------|
+Xander|H|
+Ella|G|
+Julia|S|
+Sara (me)|B|
+<br>
+Our team decided to use our last initials so the X could be used for global massages, as per the project requierments.
+
 ## Messages
+The following tables show what data my system receives from or sends to each team member. 
 ### From Xander
-&nbsp;|Byte 1|Byte 2|
+&nbsp;|Byte 5|Byte 6|
 ------|------|------|
 Name|ChangeDirection|ChangeSpeed|
 Type|char|char        |
 Min|0|1|
-Max|1|9
+Max|1|8|
 Example|1|5|
 Use|From HMI to select a planet|From Direct drive mode to set direction|
 
 ### To Ella
-&nbsp;|Byte 1|
+&nbsp;|Byte 5|
 ------|------|
 Name|MotorSpeed|
 Type|int|
@@ -26,7 +51,7 @@ Example|150|
 Use|To WiFi to communicate current RPM|
 
 ### From Julia
-&nbsp;|Byte 1|
+&nbsp;|Byte 5|
 ------|------|
 Name    |CheckDistance|
 Type    |char     |
