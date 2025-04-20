@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#messages" class="md-skip">
+        <a href="#standard-message-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -454,6 +454,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#standard-message-structure" class="md-nav__link">
+    Standard Message structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#messages" class="md-nav__link">
     Messages
   </a>
@@ -603,6 +610,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#standard-message-structure" class="md-nav__link">
+    Standard Message structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#messages" class="md-nav__link">
     Messages
   </a>
@@ -668,14 +682,94 @@
 
   <h1>API</h1>
 
+<h2 id="standard-message-structure">Standard Message structure</h2>
+<table>
+<thead>
+<tr>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+<th>Byte 4</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
+<th>Byte 7</th>
+<th>Byte 8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Z</td>
+<td>Sender Initial</td>
+<td>Receiver Initial</td>
+<td>Data 1</td>
+<td>Data 2</td>
+<td>Y</td>
+<td>B</td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Note: Data 2 does not exist in some messages. A message containing one data point would look like this. <br>
+Byte 1|Byte 2|Byte 3|Byte 4|Byte 5|Byte 6|Byte 7|
+------|------|------|------|------|------|------|
+A|Z|Sender Initial|Receiver Initial|Data 1|Y|B|
+<br>
+The message handeling code is designed to notice the start sequence, AZ, and look at the subsequent characters until it notices that the string is too long, or it reaches the end sequence, YB. It will either pass, destroy, or filter that data based on if the receiver initial is B. Depending on the initials, the code will filter out data that contains invalid characters for that message.
+<br>
+The initials for all of my team are shown bellow. <br></p>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Initial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xander</td>
+<td>H</td>
+</tr>
+<tr>
+<td>Ella</td>
+<td>G</td>
+</tr>
+<tr>
+<td>Julia</td>
+<td>S</td>
+</tr>
+<tr>
+<td>Sara (me)</td>
+<td>B</td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+</tr>
+<tr>
+<td>Our team decided to use our last initials so the X could be used for global massages, as per the project requierments.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="messages">Messages</h2>
+<p>The following tables show what data my system receives from or sends to each team member. </p>
 <h3 id="from-xander">From Xander</h3>
 <table>
 <thead>
 <tr>
 <th>&nbsp;</th>
-<th>Byte 1</th>
-<th>Byte 2</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 </tr>
 </thead>
 <tbody>
@@ -697,7 +791,7 @@
 <tr>
 <td>Max</td>
 <td>1</td>
-<td>9</td>
+<td>8</td>
 </tr>
 <tr>
 <td>Example</td>
@@ -716,7 +810,7 @@
 <thead>
 <tr>
 <th>&nbsp;</th>
-<th>Byte 1</th>
+<th>Byte 5</th>
 </tr>
 </thead>
 <tbody>
@@ -751,7 +845,7 @@
 <thead>
 <tr>
 <th>&nbsp;</th>
-<th>Byte 1</th>
+<th>Byte 5</th>
 </tr>
 </thead>
 <tbody>
