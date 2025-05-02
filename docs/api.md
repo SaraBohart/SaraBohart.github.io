@@ -11,6 +11,7 @@ A|Z|Sender Initial|Receiver Initial|Data 1|Data 2|Y|B|
  <br>
 
 Note: Data 2 does not exist in some messages. A message containing one data point would look like this. <br>
+
 Byte 1|Byte 2|Byte 3|Byte 4|Byte 5|Byte 6|Byte 7|
 ------|------|------|------|------|------|------|
 A|Z|Sender Initial|Receiver Initial|Data 1|Y|B|
