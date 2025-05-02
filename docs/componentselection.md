@@ -26,7 +26,8 @@ Option 4|Pros|Cons|
 
 ### Selection
 Option 4 <br>
-The best choice for this project is the 6V 25D Metal Gearmotor because it has a high torque and a low speed. The motor only needs to run at 150 RPM, and this motor has a max rated speed of 280 RPM. It is also cost effective despite the shipping fee.
+The best choice for this project is the 6V 25D Metal Gearmotor because it has a high torque and a low speed. The motor only needs to run at 150 RPM, and this motor has a max rated speed of 280 RPM. It is also cost effective despite the shipping fee.<br>
+Note: While this was the selected motor, it never arrived in the mail, so our team is using another 12V DC motor that was found in a bag of extra motors.
 
 ## Switching Power Supply
 ### Requierments
@@ -69,8 +70,8 @@ Option 3|Pros|Cons|
 ![Motor Driver Option 3](https://github.com/user-attachments/assets/349d41eb-22a5-4fdc-8b02-cdc659e0921e) <br> NCP51530BDR2G <br> Half Bridge (2) Driver General Purpose Power MOSFET 8-SOIC <br> Individual Cost: $2.23 <br> [DigiKey](https://www.digikey.com/en/products/detail/onsemi/NCP51530BDR2G/8636481)|Cost - This is the least expensive of the researched motor drivers. <br> Supply Voltage - This chip can run on the 12 V rail.|Very Short Datasheet - The datasheet is very short and does not have as much information as the other chips <br> Pin Names - Pin Names are different from those used in the class, so translating learning will be a step more difficult.|
 
 ### Selection
-Option 2 <br>
-This is the best choice because it is a simplified version of the chip used in class with a data sheet that provides a lot of information on how to use it.
+Option 1 <br>
+This is the best choice because it is the same one from the class, theirfore there are more resources readily avalible to me for debugging and troubleshooting.
 
 ## Microcontroler
 ### Requierments
