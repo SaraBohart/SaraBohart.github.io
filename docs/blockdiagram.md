@@ -6,9 +6,24 @@ tags:
 ---
 This block diagram is for the actuator subsystem. It will use a digital motor driver to change the speed of the motor based on data from the distance sensor.
 ## Individual Block Diagram
-![SaraBohartBlockDigramMotor](https://github.com/user-attachments/assets/3a50993e-f810-406e-8364-014cd8c868e7)
-Updated 2/24/25
+![SaraBohartBlockDigramMotor](https://github.com/user-attachments/assets/39dbad65-09cf-474b-b4d8-5e8a20ab6f98)
+Updated 5/1/25
 ## The Plan
-The project that this system is designed for is emulating the gravity of different planets using a centrifuge. I am in charge of the motor, which needs to get information from the distance sensor to know how fast to spin the motor to emulate the selected gravity. It will also share the current PWM value with the OLED so it can calculate and display the centrifugal force that the motor is causing.  
-Per the project requirements, the motor must communicate with the microcontroller through an “complex motor driver IC”. I have decided to use the IFX9201SGAUMA1 from Infineon Technologies because we are also using that component in class. This will remove a layer of complexity, allowing me more time to focus on other areas of the course and the project, and save some money as my team will not have to buy as many parts. For the same reason, the microcontroller I have chosen is the DIP version of the PIC18F47Q10. Since both of these components are used in the class, our team saves time and money, which can be used on other aspects of the project.  
-More research needs to be done on gravity emulation. I need to know how the size of the centrifuge will affect the power required from the motor. Once those calculations are done, the motor will be placed as shown in the block diagram. It will be controlled by the motor driver, which is controlled by the microcontroller, which is responding to input from the distance sensor.
+The project that this system is designed for is emulating the gravity of different planets using a centrifuge. I am in charge of the motor, which needs to get information from the distance sensor and the HMI to know if it is safe to spin and how fast to spin the motor to emulate the selected gravity. <br>
+All of the message handeling and SPI code cannot run on one microcontroller, so a second one was added. They each are powered by their own voltage regulator, and communicate over a logic gate to control the motor speed. B0 sets the motor on or off based on sensor input and B1-3 select the planet. <br>
+
+|Setting|B0|B1|B2|B3|
+|-------|---|---|---|---|
+|Off for safety|low|either|either|either|
+|Mercury|either|high|high|high|
+|Venus|either|high|low|low|
+|Moon|either|low|high|low|
+|Mars|either|low|low|high|
+|Jupiter|either|high|high|low|
+|Saturn|either|low|high|high|
+|Neptune|either|high|low|high|
+|Pluto|either|low|low|low|
+
+<br>
+This then trigers the SPI to switch on and off, creating a PWM signal to modulate the speed of the motor. The motor will only spin when B0 is written high. <br>
+For the purposes of demonstration, the logic gate will be displayed using LEDs on a breadboard. In the official project, the wires will jump directly between the PICs.
