@@ -652,12 +652,90 @@
 
 <p>This block diagram is for the actuator subsystem. It will use a digital motor driver to change the speed of the motor based on data from the distance sensor.</p>
 <h2 id="individual-block-diagram">Individual Block Diagram</h2>
-<p><a class="glightbox" href="https://github.com/user-attachments/assets/3a50993e-f810-406e-8364-014cd8c868e7" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SaraBohartBlockDigramMotor" src="https://github.com/user-attachments/assets/3a50993e-f810-406e-8364-014cd8c868e7" /></a>
-Updated 2/24/25</p>
+<p><a class="glightbox" href="https://github.com/user-attachments/assets/39dbad65-09cf-474b-b4d8-5e8a20ab6f98" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SaraBohartBlockDigramMotor" src="https://github.com/user-attachments/assets/39dbad65-09cf-474b-b4d8-5e8a20ab6f98" /></a>
+Updated 5/1/25</p>
 <h2 id="the-plan">The Plan</h2>
-<p>The project that this system is designed for is emulating the gravity of different planets using a centrifuge. I am in charge of the motor, which needs to get information from the distance sensor to know how fast to spin the motor to emulate the selected gravity. It will also share the current PWM value with the OLED so it can calculate and display the centrifugal force that the motor is causing.<br />
-Per the project requirements, the motor must communicate with the microcontroller through an “complex motor driver IC”. I have decided to use the IFX9201SGAUMA1 from Infineon Technologies because we are also using that component in class. This will remove a layer of complexity, allowing me more time to focus on other areas of the course and the project, and save some money as my team will not have to buy as many parts. For the same reason, the microcontroller I have chosen is the DIP version of the PIC18F47Q10. Since both of these components are used in the class, our team saves time and money, which can be used on other aspects of the project.<br />
-More research needs to be done on gravity emulation. I need to know how the size of the centrifuge will affect the power required from the motor. Once those calculations are done, the motor will be placed as shown in the block diagram. It will be controlled by the motor driver, which is controlled by the microcontroller, which is responding to input from the distance sensor.</p>
+<p>The project that this system is designed for is emulating the gravity of different planets using a centrifuge. I am in charge of the motor, which needs to get information from the distance sensor and the HMI to know if it is safe to spin and how fast to spin the motor to emulate the selected gravity. <br>
+All of the message handeling and SPI code cannot run on one microcontroller, so a second one was added. They each are powered by their own voltage regulator, and communicate over a logic gate to control the motor speed. B0 sets the motor on or off based on sensor input and B1-3 select the planet. <br></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>B0</th>
+<th>B1</th>
+<th>B2</th>
+<th>B3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Off for safety</td>
+<td>low</td>
+<td>either</td>
+<td>either</td>
+<td>either</td>
+</tr>
+<tr>
+<td>Mercury</td>
+<td>either</td>
+<td>high</td>
+<td>high</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Venus</td>
+<td>either</td>
+<td>high</td>
+<td>low</td>
+<td>low</td>
+</tr>
+<tr>
+<td>Moon</td>
+<td>either</td>
+<td>low</td>
+<td>high</td>
+<td>low</td>
+</tr>
+<tr>
+<td>Mars</td>
+<td>either</td>
+<td>low</td>
+<td>low</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Jupiter</td>
+<td>either</td>
+<td>high</td>
+<td>high</td>
+<td>low</td>
+</tr>
+<tr>
+<td>Saturn</td>
+<td>either</td>
+<td>low</td>
+<td>high</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Neptune</td>
+<td>either</td>
+<td>high</td>
+<td>low</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Pluto</td>
+<td>either</td>
+<td>low</td>
+<td>low</td>
+<td>low</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+This then trigers the SPI to switch on and off, creating a PWM signal to modulate the speed of the motor. The motor will only spin when B0 is written high. <br>
+For the purposes of demonstration, the logic gate will be displayed using LEDs on a breadboard. In the official project, the wires will jump directly between the PICs.</p>
 
 
 
