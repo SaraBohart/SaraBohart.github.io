@@ -755,14 +755,67 @@
 </tr>
 </tbody>
 </table>
-<p>Note: Data 2 does not exist in some messages. A message containing one data point would look like this. <br>
-Byte 1|Byte 2|Byte 3|Byte 4|Byte 5|Byte 6|Byte 7|
-------|------|------|------|------|------|------|
-A|Z|Sender Initial|Receiver Initial|Data 1|Y|B|
-<br>
-The message handeling code is designed to notice the start sequence, AZ, and look at the subsequent characters until it notices that the string is too long, or it reaches the end sequence, YB. It will either pass, destroy, or filter that data based on if the receiver initial is B. Depending on the initials, the code will filter out data that contains invalid characters for that message.
-<br>
-The initials for all of my team are shown bellow. <br></p>
+<p>Note: Data 2 does not exist in some messages. A message containing one data point would look like this. <br></p>
+<table>
+<thead>
+<tr>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+<th>Byte 4</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
+<th>Byte 7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Z</td>
+<td>Sender Initial</td>
+<td>Receiver Initial</td>
+<td>Data 1</td>
+<td>Y</td>
+<td>B</td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>The message handeling code is designed to notice the start sequence, AZ, and look at the subsequent characters until it notices that the string is too long, or it reaches the end sequence, YB. It will either pass, destroy, or filter that data based on if the receiver initial is B. Depending on the initials, the code will filter out data that contains invalid characters for that message.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>The initials for all of my team are shown bellow. <br></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
