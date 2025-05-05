@@ -28,10 +28,12 @@ Ella|G|
 Julia|S|
 Sara (me)|B|
 <br>
+
 Our team decided to use our last initials so the X could be used for global massages, as per the project requierments.
 
 ## Messages
 The following tables show what data my system receives from or sends to each team member. 
+
 ### From Xander
 &nbsp;|Byte 5|Byte 6|
 ------|------|------|
