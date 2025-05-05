@@ -25,5 +25,5 @@ All of the message handeling and SPI code cannot run on one microcontroller, so 
 |Pluto|either|low|low|low|
 
 <br>
-This then trigers the SPI to switch on and off, creating a PWM signal to modulate the speed of the motor. The motor will only spin when B0 is written high. <br>
+This then trigers the SPI to switch on and off for different intervals, creating a PWM signal to modulate the speed of the motor. The motor will only spin when B0 is written high, because that indicates that it is safe to do so. <br>
 For the purposes of demonstration, the logic gate will be displayed using LEDs on a breadboard. In the official project, the wires will jump directly between the PICs.
