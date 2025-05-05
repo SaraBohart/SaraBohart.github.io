@@ -16,6 +16,7 @@ Byte 1|Byte 2|Byte 3|Byte 4|Byte 5|Byte 6|Byte 7|
 ------|------|------|------|------|------|------|
 A|Z|Sender Initial|Receiver Initial|Data 1|Y|B|
 <br>
+
 The message handeling code is designed to notice the start sequence, AZ, and look at the subsequent characters until it notices that the string is too long, or it reaches the end sequence, YB. It will either pass, destroy, or filter that data based on if the receiver initial is B. Depending on the initials, the code will filter out data that contains invalid characters for that message.
 <br>
 The initials for all of my team are shown bellow. <br>
