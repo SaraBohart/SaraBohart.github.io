@@ -7,13 +7,13 @@ tags:
 This is the final schmatic of the Motor Driver System. It includes the Switching regulators that were used to filter the power down to the 3.3V required by the PIC Microchip. Then it displays the motor driver with the motor connectors. The PIC is shown with net names that connect its pins to the appropriate pins on the other components. The remaining boxes show headers which are used for inter board communication and in circuit programming.
 
 ### New Schematic PNG
-![FinalSchematic-1](https://github.com/user-attachments/assets/570fe4ba-4823-4bd1-8d1c-cb989be4c2d7)
+![FinalSchematic-1](https://github.com/user-attachments/assets/8d3a73e5-e987-4e59-a37d-0ad74ea9bb4b)
 
 ### New Schematic PDF
-[FinalSchematic.pdf](https://github.com/user-attachments/files/20048337/FinalSchematic.pdf)
+[FinalSchematic.pdf](https://github.com/user-attachments/files/20049355/FinalSchematic.pdf)
 
 ### New Schematic Zip
-[FinalPCB_Project.zip](https://github.com/user-attachments/files/20048643/FinalPCB_Project.zip)
+[FINAL.zip](https://github.com/user-attachments/files/20049369/FINAL.zip)
 
 The following PCB design was never manufactured, but shows how all the components used in the final design would be combined on one board. This would be the version 2.0 of the hardware design. It would eliminate all of the fly wires needed for the real PCB and simplify the whole system. This would make it more stable and easier to keep track of. This design also fixes the mistake made witht the switching regulator. As you can see in the old schematic, the feedback pin was connected on the node with the inductor and the diode. It should have been connected on the node with the inductor, capacitor, and fuse. On the original PCB, I had to bend the pins on the switching regulators and solder wires to fix this issue. Since the new schematic does not have that mistake, this board will not have that issue. <br>
 Furthermore, this design already uses the correct motor driver. between the first design and this one, the motor driver changed, meaning that the new motor driver had to be fly wired on to the board. This was difficult to keep track of if the wires got disconnected. The new design makes it so that these wires are nonexistant, eliminating the possibility of them being unplugged and mixed up.<br>
