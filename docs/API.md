@@ -46,7 +46,8 @@ Use|From HMI to select a planet|From Direct drive mode to set direction|
 
 An example of what this message could look like is AZHB03YB, which means that the motor will spin in the forward direction at the speed asociated with the moon. This would write the three logic pins (B1,B2,B3) to the sequence that represents the moon. This tells the SPI microcontroller to turn the motor on and off at the appropriate interval to generate the RPM needed to emulate the moon's gravity.
 
-While the final design of our system does not include functionality for the motor moving in reverse, this could be implemented in the future by adding another logic pin that turns on when the direction flips.
+While the final design of our system does not include functionality for the motor moving in reverse, this could be implemented in the future by adding another logic pin that turns on when the direction flips. Proof that the motor can be driven in both directions can be found in the SPI motor driver code's Rev variable, which stores the string for driving the motor in the reverse direction. The rpm value in the message handeling code also flips from positive to negative when the ChangeDirection value is changed.
+
 
 ### To Ella
 &nbsp;|Byte 5|
