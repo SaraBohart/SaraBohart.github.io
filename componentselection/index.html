@@ -703,6 +703,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#final-major-components" class="md-nav__link">
+    Final Major Components
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -908,6 +915,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-major-components" class="md-nav__link">
+    Final Major Components
+  </a>
   
 </li>
       
@@ -1157,7 +1171,7 @@ This is the best choice because it is the same one from the class, theirfore the
 <table>
 <thead>
 <tr>
-<th>ESP Info</th>
+<th>PIC Info</th>
 <th>Answer</th>
 <th>Notes</th>
 </tr>
@@ -1175,7 +1189,7 @@ This is the best choice because it is the same one from the class, theirfore the
 </tr>
 <tr>
 <td>Datasheet</td>
-<td><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PDF of the Datasheet</a></td>
+<td><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/PIC18F27-47Q10-Micorcontroller-Data-Sheet-DS40002043.pdf">PDF of the Datasheet</a></td>
 <td></td>
 </tr>
 <tr>
@@ -1292,6 +1306,61 @@ This is the best choice because it is the same one from the class, theirfore the
 <a class="glightbox" href="https://github.com/user-attachments/assets/65df1968-cdb7-412a-a03b-ca3b6fad73e2" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SPI Chip Pinout image" src="https://github.com/user-attachments/assets/65df1968-cdb7-412a-a03b-ca3b6fad73e2" /></a></p>
 <h3 id="selection_3">Selection</h3>
 <p>I used two of the same PIC18F47Q10-I/PT microcontrollers. Two were necisarry to handel all of the functionality I needed for this priject. This chip was ideal because it was the same one used in class, meaning I had access to may resources to help trouble shoot and debug my code.</p>
+<h2 id="final-major-components">Final Major Components</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Quantity</th>
+<th>Required Subcomponents</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/5040106f-0937-45a9-ba16-5b30dc655c21" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image of motor option 5" src="https://github.com/user-attachments/assets/5040106f-0937-45a9-ba16-5b30dc655c21" /></a> Brushed 12V DC Gear Motor</td>
+<td>1</td>
+<td>None</td>
+<td>Spinning the centrifuge</td>
+</tr>
+<tr>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/a97830bc-183c-40a6-b805-0942c42c4421" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Screenshot 2025-02-20 160933" src="https://github.com/user-attachments/assets/a97830bc-183c-40a6-b805-0942c42c4421" /></a><br> LM2576-3.3WU</td>
+<td>2</td>
+<td>330uH Inductor <br> 330uF Capacitor <br> 1N5822 Diode <br> 100uF Capacitor</td>
+<td>Stepping down the input voltage to 3.3 V for the logic power</td>
+</tr>
+<tr>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/15862760-4163-4db0-8e28-1f16d2803363" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Motor Driver Option 1" src="https://github.com/user-attachments/assets/15862760-4163-4db0-8e28-1f16d2803363" /></a> <br> IFX9201SGAUMA1</td>
+<td>1</td>
+<td>2 &lt;33uF Capacitors</td>
+<td>Controling the direction and power to the motor</td>
+</tr>
+<tr>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/72d89ae4-0f2f-4dd1-9c2d-b88c178762c5" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PIC18F47Q10 image" src="https://github.com/user-attachments/assets/72d89ae4-0f2f-4dd1-9c2d-b88c178762c5" /></a> PIC18F47Q10-I/PT</td>
+<td>2</td>
+<td>220 ohm resistor</td>
+<td>Handeling the UART Messages and SPI motor driver</td>
+</tr>
+<tr>
+<td>8 pin Ribbon Cable Connector (Supplied in class)</td>
+<td>2</td>
+<td>None</td>
+<td>Connecting to the other systems</td>
+</tr>
+<tr>
+<td>Bullet Connecctor (Supplied in class)</td>
+<td>1</td>
+<td>None</td>
+<td>Connecting to the power source</td>
+</tr>
+<tr>
+<td>12V 2A Power Source</td>
+<td>1</td>
+<td>None</td>
+<td>Powering the system</td>
+</tr>
+</tbody>
+</table>
 
 
 
