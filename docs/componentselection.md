@@ -24,10 +24,15 @@ Option 4|Pros|Cons|
 ----------|----|----|
 ![Image of Motor option 4](https://github.com/user-attachments/assets/30ba0258-de9e-4d76-901e-75019b081028) 25SG-370CA <br>6V 25D Metal Gearmotor, 280rpm <br>Individual Cost: $6.58 <br> [RoboShop](https://www.robotshop.com/products/e-s-motor-6v-25d-metal-gearmotor-280rpm?pr_prod_strat=e5_desc&pr_rec_id=40bbe8f7d&pr_rec_pid=7487431409825&pr_ref_pid=7487467978913&pr_seq=uniform)|Cost - For a gear motor this is not very expencive. <br> Comes with mounting - There is an aluminum mount for the shaft and mounting holes to attach the motor to the project. |New Vendor - This motor would require another order form because it is not from digikey <br> Lack of datasheet - The only specs given are on the vendor's cite <br>Shipping fee - The shipping fee is estimated to be at least $16.50|
 
+Option 5|Pros|Cons|
+--------|----|----|
+![image of motor option 5](https://github.com/user-attachments/assets/5040106f-0937-45a9-ba16-5b30dc655c21) Brushed 12V DC Gear Motor <br>0.27Kg.cm/465RPM w/ 22.56:1 Planetary Gearbox <br> Individual Cost: $10.75 <br> [StepperOnline](https://www.omc-stepperonline.com/brushed-12v-dc-gear-motor-0-27kg-cm-465rpm-w-22-56-1-planetary-gearbox-pa22-201213500-g23)|Good RPM - RPM is near what we need for this project <br> Low cost <br> Close approximation to the motor we ended up using|Another Vender - This would increase shipping costs|
+
+
 ### Selection
 Option 4 <br>
 The best choice for this project is the 6V 25D Metal Gearmotor because it has a high torque and a low speed. The motor only needs to run at 150 RPM, and this motor has a max rated speed of 280 RPM. It is also cost effective despite the shipping fee.<br>
-Note: While this was the selected motor, it never arrived in the mail, so our team is using another 12V DC motor that was found in a bag of extra motors.
+Note: While this was the selected motor, it never arrived in the mail, so our team is using another 12V DC motor that was found in a bag of extra motors. Option 5 was added as a close approximation to what that motor was, as the actual motor could not be identified.
 
 ## Switching Power Supply
 ### Requierments
@@ -107,9 +112,12 @@ OSC|1|0|RA6|
 ### My Role
 My role as a team member is to plan and lead meetings to ensure that we are staying on track as a group. My section of the project is the actuator system. I need to design something that takes information from the distance sensor, uses that information to pick a spin speed, drives a motor to spin at that speed, and communicate that speed with the OLED system. 
 
-### Test Project
-This is a screenshot of my test project for this microcontroller.
-![Test MPLabX Project](https://github.com/user-attachments/assets/8d2db0ec-1ed5-4273-bc00-366cdfb26589)
+### MPLABX Project
+This is a screenshot of my MPLABX project for the microcontroller in charge of the message handeling.
+![API Chip Pinout image](https://github.com/user-attachments/assets/9ffa2c05-17ba-41ec-baab-6258988319cb)
+
+This is a screenshot of my MPLABX project for the microcontroller in charge of the SPI motor driver.
+![SPI Chip Pinout image](https://github.com/user-attachments/assets/65df1968-cdb7-412a-a03b-ca3b6fad73e2)
 
 ### Selection
-As of 2/7/25, I am using the PIC18F47Q10. This microcontroller opperates with in the planned voltage, has enough pins for my design, and is used in the class, ensuring that I have many people I can turn to for advice. 
+I used two of the same PIC18F47Q10-I/PT microcontrollers. Two were necisarry to handel all of the functionality I needed for this priject. This chip was ideal because it was the same one used in class, meaning I had access to may resources to help trouble shoot and debug my code.
