@@ -69,6 +69,9 @@ Use|From sensor to check for safety|
 
 An example of what this message could look like is AZSB0YB, which would mean that it is not safe to opporate the motor. In this case, the logic pin for the motor spinning would be written low, keeping the motor still.
 
+### Broadcast
+A broadcast message would be marked with an X, allowing it to be sent to everyone in the team. The team found no real need for a broadcast message, so there is no functionality for one included in my code.
+
 ## Code
 The code for the message handeling can be found [here](https://github.com/user-attachments/files/20009027/MessageTest2.zip). <br>
 This code identifies the start of the message by detecting an A followed by a Z. It then identifies the sender and receiver, checking if they are in the team and if they are me. If they are not in the team or I am the sender, the message is deleted. If not, the sender is identified and their data is stored in the associated variable. <br>
