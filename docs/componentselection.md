@@ -82,11 +82,11 @@ This is the best choice because it is the same one from the class, theirfore the
 ### Requierments
 The microcontroler needs to support the selected motor driver and communicate through UART with the sensor and the OLED systems. To accomplish this, it will need one UART and one I2C subsystem. This will be a total of 4 pins 2 for I2C and 2 for UART RX and TX.
 ### PIC 
-ESP Info|Answer|Notes|
+PIC Info|Answer|Notes|
 ----------|----|----|
 Model|PIC18F47Q10-I/PT| |
 Product Page|[Microchip](https://www.microchipdirect.com/product/PIC18F47Q10-I/PT?productLoaded=true)| |
-Datasheet|[PDF of the Datasheet](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf)| |
+Datasheet|[PDF of the Datasheet](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/PIC18F27-47Q10-Micorcontroller-Data-Sheet-DS40002043.pdf)| |
 Application Notes|[UART](https://www.microchip.com/en-us/application-notes/tb3282) <br> [Serial EEPROMs](https://www.microchip.com/en-us/application-notes/an2045)|It did not have application notes on I2C but it is the same family as the in-class PIC, so that should transfer over enough.|
 Vendor Link|[DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47Q10-I-PT/10187786)|Can ship immedeately|
 Code Examples|[All code examples from Microchip](https://mplabxpress.microchip.com/mplabcloud/example?device=q10) <br> [I2C Host write data](https://github.com/microchip-pic-avr-examples/pic18f47q10-cnano-i2c-write-bare/tree/1.0.4)||
@@ -121,3 +121,14 @@ This is a screenshot of my MPLABX project for the microcontroller in charge of t
 
 ### Selection
 I used two of the same PIC18F47Q10-I/PT microcontrollers. Two were necisarry to handel all of the functionality I needed for this priject. This chip was ideal because it was the same one used in class, meaning I had access to may resources to help trouble shoot and debug my code.
+
+## Final Major Components
+Component|Quantity|Required Subcomponents|Use|
+---------|--------|----------------------|-----------------------|
+![image of motor option 5](https://github.com/user-attachments/assets/5040106f-0937-45a9-ba16-5b30dc655c21) Brushed 12V DC Gear Motor|1|None|Spinning the centrifuge|
+![Screenshot 2025-02-20 160933](https://github.com/user-attachments/assets/a97830bc-183c-40a6-b805-0942c42c4421)<br> LM2576-3.3WU |2|330uH Inductor <br> 330uF Capacitor <br> 1N5822 Diode <br> 100uF Capacitor|Stepping down the input voltage to 3.3 V for the logic power|
+![Motor Driver Option 1](https://github.com/user-attachments/assets/15862760-4163-4db0-8e28-1f16d2803363) <br> IFX9201SGAUMA1|1|2 <33uF Capacitors|Controling the direction and power to the motor|
+![PIC18F47Q10 image](https://github.com/user-attachments/assets/72d89ae4-0f2f-4dd1-9c2d-b88c178762c5) PIC18F47Q10-I/PT|2|220 ohm resistor|Handeling the UART Messages and SPI motor driver|
+8 pin Ribbon Cable Connector (Supplied in class)|2|None|Connecting to the other systems|
+Bullet Connecctor (Supplied in class)|1|None|Connecting to the power source|
+12V 2A Power Source|1|None|Powering the system|
