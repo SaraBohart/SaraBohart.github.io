@@ -5,6 +5,8 @@ tags:
 - tag2
 ---
 
+![New Top image](https://github.com/user-attachments/assets/bda47107-898e-452d-9d3d-ee4d669cff2f)
+
 ## Sara Bohart
 I am a third year robotics engineering student at Arizona State University.
 
