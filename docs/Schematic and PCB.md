@@ -4,6 +4,7 @@ tags:
 - tag1
 - tag2
 ---
+## PCB Redesign
 This is the final schmatic of the Motor Driver System. It includes the Switching regulators that were used to filter the power down to the 3.3V required by the PIC Microchip. Then it displays the motor driver with the motor connectors. The PIC is shown with net names that connect its pins to the appropriate pins on the other components. The remaining boxes show headers which are used for inter board communication and in circuit programming.
 
 ### New Schematic PNG
@@ -28,6 +29,7 @@ Overall, the redesign of the PCB would offer a more stable system that is much s
 ### New PCB CAM
 [CAMStackFinal.zip](https://github.com/user-attachments/files/20049262/CAMStackFinal.zip)
 
+## PCB Original Design
 The Following are the original Schematic and the PCB that was actually used for demonstration. It only contains one PIC and one voltage redulator, which is why the final product at the Innovation Showcase contained two extra boards (one with a PIC and one with a regulator). The final schematic and PCB above show the full final system combined onto one board. The folloing is shown for doccumentation of the engineering design process.
 
 ### Old Schematic PNG
