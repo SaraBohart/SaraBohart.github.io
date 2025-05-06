@@ -1,5 +1,5 @@
 ---
-title: Hello
+title: Home
 tags:
 - tag1
 - tag2
