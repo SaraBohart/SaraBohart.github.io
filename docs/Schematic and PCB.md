@@ -5,6 +5,16 @@ tags:
 - tag2
 ---
 
+## Team PCBs
+Team Member|Front|Back|
+-----------|-----|-----|
+Julia|![Julia Front image](https://github.com/user-attachments/assets/0d25fc20-95b1-4da8-baa6-b44eb9828932)|![Julia Back image](https://github.com/user-attachments/assets/5e545b6c-c6e6-4074-b08f-f4e3bbc625e8)|
+Xander|![Xander Top image](https://github.com/user-attachments/assets/c57d0274-6a83-424e-83f4-5b0176c0c9da)|![Xander Bottom image](https://github.com/user-attachments/assets/b06f48fd-7473-4354-8240-c0fb83c9ce77)|
+Sara|![New Top image](https://github.com/user-attachments/assets/bda47107-898e-452d-9d3d-ee4d669cff2f)|![New Bottom image](https://github.com/user-attachments/assets/8694815f-24c9-4057-a13c-be446701deaf)|
+Ella|![Ella Top image](https://github.com/user-attachments/assets/65103e51-0313-472c-bc97-3a79d011aefb)|![Ella Bottom image](https://github.com/user-attachments/assets/e623c3b9-0d8b-4157-a720-f777cd7a6726)|
+
+
+
 ## PCB Original Design
 The Following are the original Schematic and the PCB that was actually used for demonstration. It only contains one PIC and one voltage redulator, which is why the final product at the Innovation Showcase contained two extra boards (one with a PIC and one with a regulator). The final schematic and PCB above show the full final system combined onto one board. The folloing is shown for doccumentation of the engineering design process. The bill of materials for both the real design and the new design can be found [here](https://sarabohart.github.io/bom/).
 ### Old Schematic PNG
