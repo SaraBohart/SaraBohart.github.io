@@ -8,7 +8,7 @@ This block diagram is for the actuator subsystem. It will use a digital motor dr
 ## Individual Block Diagram
 ![SaraBohartBlockDigramMotor drawio (4)](https://github.com/user-attachments/assets/2c7853fb-b3d5-4b63-83ab-6c8d1916eebb)
 
-Updated 5/1/25
+Updated 5/5/25
 ## Functionality
 The project that this system is designed for is emulating the gravity of different planets using a centrifuge. I am in charge of the motor, which needs to get information from the distance sensor and the HMI to know if it is safe to spin and how fast to spin the motor to emulate the selected gravity. <br>
 All of the message handeling and SPI code cannot run on one microcontroller, so a second one was added. They each are powered by their own voltage regulator, and communicate over a logic gate to control the motor speed. B0 sets the motor on or off based on sensor input and B1-3 select the planet. <br>
