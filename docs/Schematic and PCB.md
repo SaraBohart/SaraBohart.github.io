@@ -1,5 +1,5 @@
 ---
-title: Schematic
+title: Schematic and PCB
 tags:
 - tag1
 - tag2
