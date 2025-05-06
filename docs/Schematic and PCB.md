@@ -6,8 +6,7 @@ tags:
 ---
 
 ## PCB Original Design
-The Following are the original Schematic and the PCB that was actually used for demonstration. It only contains one PIC and one voltage redulator, which is why the final product at the Innovation Showcase contained two extra boards (one with a PIC and one with a regulator). The final schematic and PCB above show the full final system combined onto one board. The folloing is shown for doccumentation of the engineering design process.
-
+The Following are the original Schematic and the PCB that was actually used for demonstration. It only contains one PIC and one voltage redulator, which is why the final product at the Innovation Showcase contained two extra boards (one with a PIC and one with a regulator). The final schematic and PCB above show the full final system combined onto one board. The folloing is shown for doccumentation of the engineering design process. The bill of materials for both the real design and the new design can be found [here](https://sarabohart.github.io/bom/).
 ### Old Schematic PNG
 ![MDv1.7.jpg](https://github.com/user-attachments/assets/44ca3e5b-298a-4426-a766-a28635dde562)
 ### Old Schematic PDF
