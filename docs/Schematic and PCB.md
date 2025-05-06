@@ -21,6 +21,8 @@ The Following are the original Schematic and the PCB that was actually used for 
 ### Real PCB Layout Image
 ![Real PCBs image](https://github.com/user-attachments/assets/be7cf89b-1b1d-4566-962a-232a0ff9f0c8)
 
+The new schematic shows what this final board does with all of those jumperwires in a simpler and less chaotic way.
+
 ### Real PCB GERBER
 [MotorDriverSB_GERBERr1_Canvas.zip](https://github.com/user-attachments/files/20048074/MotorDriverSB_GERBERr1_Canvas.zip)
 
@@ -35,7 +37,6 @@ This is the final schmatic of the Motor Driver System. It includes the Switching
 
 ### New Schematic Zip
 [FINAL.zip](https://github.com/user-attachments/files/20049369/FINAL.zip)
-
 The following PCB design was never manufactured, but shows how all the components used in the final design would be combined on one board. This would be the version 2.0 of the hardware design. It would eliminate all of the fly wires needed for the real PCB and simplify the whole system. This would make it more stable and easier to keep track of. This design also fixes the mistake made witht the switching regulator. As you can see in the old schematic, the feedback pin was connected on the node with the inductor and the diode. It should have been connected on the node with the inductor, capacitor, and fuse. On the original PCB, I had to bend the pins on the switching regulators and solder wires to fix this issue. Since the new schematic does not have that mistake, this board will not have that issue. <br>
 Furthermore, this design already uses the correct motor driver. between the first design and this one, the motor driver changed, meaning that the new motor driver had to be fly wired on to the board. This was difficult to keep track of if the wires got disconnected. The new design makes it so that these wires are nonexistant, eliminating the possibility of them being unplugged and mixed up.<br>
 This design also automatically connects the logic pins across LEDs, making it much more difficult for the logic pins to be disconnected from eachother. This was an issue durring testing as the logic indicating LEDs were connected in a bread board. <br>
