@@ -21,5 +21,5 @@ Here are links to each of my pages <br>
 
 ### STEMteresting (Team 301)
 This is a link to my team's GitHub. 
-[STEMteresting GitHub](https://egr314-2025-s-301.github.io/main-page/)
+[STEMteresting GitHub](https://egr314-2025-s-301.github.io/)
 Our project is a gravity simulating centrifuge, and I am responsible for controling the speed of the centrifuge.
