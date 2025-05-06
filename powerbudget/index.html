@@ -90,6 +90,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#conclusion" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -524,6 +529,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Power Budget
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -533,6 +549,30 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -555,6 +595,21 @@
   
   
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -584,6 +639,8 @@ By making this power budget, I was able to gage what power source I would need. 
 This power budget assumes that the system will be powered using an outlet via an adapter such as <a href="https://www.amazon.com/Adapter-Signcomplex-100-240V-Transformers-Switching/dp/B074HRM5D4?source=ps-sl-shoppingads-lpcontext&amp;ref_=fplfs&amp;smid=A3AI1Y9BXQD9K&amp;th=1">this</a>. Since the power source is an outlet and not a battery, the battery life is inefinite. It makes more sense for this project to be powered through a stationary wall outlet because it would be used in an enviornment like a museum, where the motor will not need to be transported often.<br>
 This is a <a href="https://github.com/user-attachments/files/20047875/UpdatedPowerBudget.pdf">PDF of the Power Budget</a>, which can be downloaded for easier viewing.
 Durring testing, the original H-Bridge caught on fire. It was though that this issue was caused by the 4 amp power supply, so the amprage was brought down to 2. <a href="https://www.amazon.com/dp/B086T1N5R4?ref=ppx_yo2ov_dt_b_fed_asin_title&amp;th=1">This</a> is the powersource that was used at the innovation showcase. It had enough power to power the whole team and the motor.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Even though I calculated that I needed a 4 amp power supply, I used a 2 amp power supply. This was because when I plugged one of my original motor drivers into the full 12V 4A power, it burnt. The power budget is based on the absolute maximum current needed for the system. My system does not constantly run at the maximum current, theirfore it worked just fine with half of the maximum needed ampherage. A power budget is great for estimating the maximum current needed, but the data sheets must be consulted to ensure that the components can all run with that maximum current.</p>
 
 
 
